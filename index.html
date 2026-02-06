@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>For Someone Special ❤️</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="card">
-  <img src="photo.jpg" class="photo">
-  <h1>Hey ❤️</h1>
-  <p>I have something for you...</p>
-  <a href="message.html"><button>Click Here</button></a>
+    <div class="emoji">🐱💗</div>
+    <div class="emoji">
+  🌸 Ishu 💖 Will you be mine? 🌸
+</div> 
+    <div class="buttons">
+        <a href="message.html">
+            <button class="yes">Yes 💖</button>
+        </a>
+        <button class="no" id="noBtn">No 🙈</button>
+    </div>
+
+    <p class="note">You can't escape love!</p>
 </div>
 
-</body>
-</html>
+<script>
+const noBtn = document.getElementById("noBtn");
 
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.floor(Math.random() * 300) - 150;
+    const y = Math.floor(Math.random() * 300) - 150;
+    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+});
+</script>
+
+</body>
+</html> 
